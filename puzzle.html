@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Solve the Puzzle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="text-align: center; font-family: sans-serif;">
+  <h1>Solve This Puzzle</h1>
+  <p>What is 3 + 4 * 2?</p>
+  <input type="text" id="answer">
+  <button onclick="checkAnswer()">Submit</button>
+  <p id="feedback"></p>
+
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById('answer').value;
+      if (input.trim() == "11") {
+        window.location.href = 'unlock.html';
+      } else {
+        document.getElementById('feedback').innerText = "Try again!";
+      }
+    }
+  </script>
+</body>
+</html>
