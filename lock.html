@@ -1,13 +1,1 @@
-function lock() {
-  fetch("http://192.168.1.42/lock") // Replace with your Arduino IP
-    .then(response => {
-      if (response.ok) {
-        window.location.href = "index.html"; // Go back to home page
-      } else {
-        alert("Failed to lock the box.");
-      }
-    })
-    .catch(err => {
-      alert("Error connecting to the box.");
-    });
-}
+
